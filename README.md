@@ -50,7 +50,14 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 6. Run migration to set up the database
 - php artsan migrate
 
-7. Start the development server
+7. Add this info to your smtp settings to work. edit .env file
+
+MAIL_USERNAME=rickytapang8@gmail.com
+MAIL_PASSWORD=looywhydmzyrhbzo
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=rickytapang8@gmail.com
+
+8. Start the development server
 - php artisan serve
 
 
