@@ -1,0 +1,51 @@
+.custom-bg {
+    background-color: #e0e0e0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.custom-btn {
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #747474;
+}
+.custom-btn:hover {
+    background-color: #f8f9fa;
+    color: #747474;
+}
+.custom-txt {
+    color: #747474;
+}
+.custom-label {
+    color: #707070;
+}
+.custom-font {
+    font-weight: 500;
+    color: #707070;
+}
+.check-icon {
+    font-size: 5rem;
+    color: #28a745; /* Green color for check icon */
+}
+.thank-you-container {
+    text-align: center;
+}
+.custom-bg {
+    background-color: #e0e0e0; /* Light gray background for the card */
+}
+.card-title {
+    margin:none;
+}
+.view-more-link {
+    color: inherit; /* Matches the text color of the parent */
+    text-decoration: none; /* Removes underline */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-weight: bold; /* Makes the text bold */
+}
+
+.view-more-link:hover {
+    text-decoration: underline; /* Adds underline on hover for emphasis */
+}
+.card-body {
+    background-color: #e0e0e0 !important;
+}
