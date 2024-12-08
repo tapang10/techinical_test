@@ -30,7 +30,7 @@ Route::get('/thank-you', function () {
 })->name('thank_you.form');
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('auth.login');
-
+Route::post('/', [AuthController::class, 'login'])->name('auth.login.post'); 
 
 Route::post('/logout', function () {
     Auth::logout();
@@ -42,7 +42,7 @@ Route::post('/logout', function () {
 // Authenticated routes
 Route::middleware('auth')->group(function () {
     // Characters route with optional ID
-    Route::post('/', [AuthController::class, 'login'])->name('auth.login.post'); 
+   
     Route::get('/characters/{id?}', [DashboardController::class, 'index'])->name('characters');
     Route::post('/characters/save', [DashboardController::class, 'saveCharacter'])->name('savedetails');
     Route::delete('/characters/delete/{id}', [DashboardController::class, 'deleteCharacter'])->name('characters.delete');

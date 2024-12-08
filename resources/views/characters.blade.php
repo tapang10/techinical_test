@@ -24,9 +24,9 @@
                 <ul class="navbar-nav ms-auto">
                     @if(auth()->check())
                     <li class="nav-item">
-                        <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                        <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            <button type="submit" class="nav-link custom-font btn btn-link" style="color: inherit; padding: 0; font-size: 16px;">LOGOUT</button>
+                            <button type="submit" class="nav-link custom-font btn btn-link" style="color: inherit; font-size: 16px;">LOGOUT</button>
                         </form>
                     </li>
                     @endif
